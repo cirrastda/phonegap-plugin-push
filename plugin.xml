@@ -82,7 +82,11 @@
     <source-file src="src/ios/PushPlugin.m"/>
     <header-file src="src/ios/AppDelegate+notification.h"/>
     <header-file src="src/ios/PushPlugin.h"/>
-    <framework src="FirebaseMessaging" type="podspec" spec="~> 2.0.0"/>
+    <podspecs>
+        <pods use-frameworks="true">
+          <pod name="FirebaseMessaging" spec="~> 2.0.0" />
+        </pods>
+    </podspecs>
     <framework src="PushKit.framework"/>
   </platform>
   <platform name="windows">

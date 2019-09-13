@@ -86,10 +86,9 @@
             <config>
                 <source url="https://github.com/CocoaPods/Specs.git"/>
             </config>
-            <pods>
-                <pod name="Firebase/Core" spec="~> 6.3.0" />
-                <pod name="Firebase/Messaging" spec="~> 6.3.0" />
-            </pods>
+            <pods use-frameworks="true">
+	            <pod name="FirebaseMessaging" spec="~> 2.0.0" />
+	          </pods>
         </podspec>
     <framework src="PushKit.framework"/>
   </platform>
